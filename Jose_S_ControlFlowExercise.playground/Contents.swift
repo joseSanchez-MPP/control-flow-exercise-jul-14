@@ -1,8 +1,8 @@
 import UIKit
 
-let timeoutInSeconds = 180
+let timeoutInSeconds = 5
 var currentTime = 0
-var timeWord = "second"
+var timePhrase = "second has"
 
 print("Timer's set for \(timeoutInSeconds)")
 print("\n")
@@ -10,11 +10,10 @@ print("\n")
 for currentTime in 1...timeoutInSeconds {
     sleep(1)
     if (currentTime != 1) {
-        timeWord = "seconds"
+        timePhrase = "seconds have"
         
     }
-    print("\(currentTime) \(timeWord) have passed!")
+    print("\(currentTime) \(timePhrase) passed!")
 }
 
-print("\n")
-print("⏰⏰⏰⏰⏰ Time's Up! ⏰⏰⏰⏰⏰")
+print("\n⏰⏰⏰⏰⏰ Time's Up! ⏰⏰⏰⏰⏰")
